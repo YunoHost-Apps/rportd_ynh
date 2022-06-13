@@ -70,11 +70,17 @@ ynh_app_setting_set --app=$app --key=client_port --value=$client_port
 ynh_script_progression --message="Configuring firewall..."
 ynh_exec_warn_less yunohost firewall allow --no-upnp TCP $client_port
 
-api_port=$(ynh_find_port --port=8195)
+api_port=$(ynh_find_port --port=$(($client_port + 1)))
 ynh_app_setting_set --app=$app --key=api_port --value=$api_port
 
-guacd_port=$(ynh_find_port --port=8295)
+guacd_port=$(ynh_find_port --port=$(($api_port + 1)))
 ynh_app_setting_set --app=$app --key=guacd_port --value=$guacd_port
+
+used_start_port=$(ynh_find_port --port=20000)
+ynh_app_setting_set --app=$app --key=used_start_port --value=$used_start_port
+used_end_port=$(ynh_find_port --port=30000)
+ynh_app_setting_set --app=$app --key=used_end_port --value=$used_end_port
+ynh_exec_warn_less yunohost firewall allow TCP $used_start_port:$used_end_port
 
 #=================================================
 # INSTALL DEPENDENCIES
@@ -197,7 +203,7 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..."
 
-yunohost service add $app --log="/var/log/$app/$app.log" --needs_exposed_ports="$client_port"
+yunohost service add $app --log="/var/log/$app/$app.log" --needs_exposed_ports="$client_port $used_start_port:$used_end_port"
 
 #=================================================
 # START SYSTEMD SERVICE
