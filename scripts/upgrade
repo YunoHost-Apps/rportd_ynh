@@ -154,7 +154,7 @@ ynh_use_logrotate --non-append
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..."
 
-yunohost service add $app --log="/var/log/$app/$app.log" --needs_exposed_ports="$client_port $used_start_port:$used_end_port"
+yunohost service add $app --log="/var/log/$app/$app.log" --needs_exposed_ports="$client_port"
 
 #=================================================
 # START SYSTEMD SERVICE
