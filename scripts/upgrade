@@ -25,6 +25,8 @@ db_user=$db_name
 db_pwd=$(ynh_app_setting_get --app=$app --key=mysqlpwd)
 datadir=$(ynh_app_setting_get --app=$app --key=datadir)
 client_port=$(ynh_app_setting_get --app=$app --key=client_port)
+used_start_port=$(ynh_app_setting_get --app=$app --key=used_start_port)
+used_end_port=$(ynh_app_setting_get --app=$app --key=used_end_port)
 api_port=$(ynh_app_setting_get --app=$app --key=api_port)
 guacd_port=$(ynh_app_setting_get --app=$app --key=guacd_port)
 key_seed=$(ynh_app_setting_get --app=$app --key=key_seed)
