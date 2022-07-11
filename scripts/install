@@ -76,9 +76,9 @@ ynh_app_setting_set --app=$app --key=api_port --value=$api_port
 guacd_port=$(ynh_find_port --port=$(($api_port + 1)))
 ynh_app_setting_set --app=$app --key=guacd_port --value=$guacd_port
 
-used_start_port=$(ynh_find_port --port=20000)
+used_start_port=$YNH_APP_ARG_FIRSTPORT
 ynh_app_setting_set --app=$app --key=used_start_port --value=$used_start_port
-used_end_port=$(ynh_find_port --port=30000)
+used_end_port=$YNH_APP_ARG_LASTPORT
 ynh_app_setting_set --app=$app --key=used_end_port --value=$used_end_port
 ynh_exec_warn_less yunohost firewall allow TCP $used_start_port:$used_end_port
 
