@@ -41,16 +41,16 @@
                 "type": "password"
             },
 			{
-				"name": "first-port",
+				"name": "firstport",
 				"type": "number",
 				"ask": {
 					"en": "Enter the FIRST Port that should be used by Rport eg. port for tunnels (standard 20000)",
-					"de": "Bitte geben Sie den LETZEN Port ein welcher von Rport für z.B. die Tunnels genutzt wird (Standart 20000)"
+					"de": "Bitte geben Sie den ERSTEN Port ein welcher von Rport für z.B. die Tunnels genutzt wird (Standart 20000)"
 				},
 				"example": "20000"
 			},
 			{	
-				"name": "last-port",
+				"name": "lastport",
 				"type": "number",
 				"ask": {
 					"en": "Enter the LAST Port that should be used by Rport eg. port for tunnels (standard 30000)",
