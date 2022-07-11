@@ -39,7 +39,7 @@
             {
                 "name": "password",
                 "type": "password"
-            }
+            },
 			{
 				"name": "first port"
 				"type": "firstport"
