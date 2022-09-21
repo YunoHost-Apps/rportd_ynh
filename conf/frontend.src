@@ -1,5 +1,5 @@
-SOURCE_URL=https://downloads.rport.io/frontend/stable/rport-frontend-stable-0.7.0-build-1026.zip
-SOURCE_SUM=76cf75805fceb7e19a80bf170b638fa993f0c9e8e1f8d8776f7fe16504147fa4
+SOURCE_URL=https://downloads.rport.io/frontend/stable/rport-frontend-stable-0.8.0-build-1092.zip
+SOURCE_SUM=88da20241514a911f63f9ca3cf5a3631368b66eb30087cddc8a852d77c5b20ac
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=false
