@@ -5,30 +5,31 @@ It shall NOT be edited by hand.
 
 # Rportd pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/rportd.svg)](https://dash.yunohost.org/appci/app/rportd) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/rportd.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/rportd.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/rportd.svg)](https://dash.yunohost.org/appci/app/rportd) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/rportd.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/rportd.maintain.svg)
+
 [![Installer Rportd avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=rportd)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Rportd rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Rportd rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Rport helps you to manage your remote servers without the hassle of VPNs, chained SSH connections, jump-hosts, or the use of commercial tools like TeamViewer and its clones.
 
 
 **Version incluse :** 0.7.0~ynh1
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Rportd](./doc/screenshots/screenshot.jpg)
+![Capture d’écran de Rportd](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://rport.io/>
-* Documentation officielle de l'admin : <https://kb.rport.io/>
-* Dépôt de code officiel de l'app : <https://github.com/cloudradar-monitoring/rport>
+* Site officiel de l’app : <https://rport.io/>
+* Documentation officielle de l’admin : <https://kb.rport.io/>
+* Dépôt de code officiel de l’app : <https://github.com/cloudradar-monitoring/rport>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_rportd>
 * Signaler un bug : <https://github.com/YunoHost-Apps/rportd_ynh/issues>
 
@@ -44,4 +45,4 @@ ou
 sudo yunohost app upgrade rportd -u https://github.com/YunoHost-Apps/rportd_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>

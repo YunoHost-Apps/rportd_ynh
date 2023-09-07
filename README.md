@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Rportd for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/rportd.svg)](https://dash.yunohost.org/appci/app/rportd) ![Working status](https://ci-apps.yunohost.org/ci/badges/rportd.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/rportd.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/rportd.svg)](https://dash.yunohost.org/appci/app/rportd) ![Working status](https://ci-apps.yunohost.org/ci/badges/rportd.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/rportd.maintain.svg)
+
 [![Install Rportd with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=rportd)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -22,7 +23,7 @@ Rport helps you to manage your remote servers without the hassle of VPNs, chaine
 
 ## Screenshots
 
-![Screenshot of Rportd](./doc/screenshots/screenshot.jpg)
+![Screenshot of Rportd](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 
